@@ -7,18 +7,34 @@
     <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
 </head>
 <body>
-    <sdpi-item label="Short-press text">
+    <sdpi-item label="Short-press text (fallback)">
         <sdpi-textarea
             setting="shortText"
-            placeholder="Text to paste on a quick tap"
+            placeholder="Plain text for a quick tap"
+            rows="3">
+        </sdpi-textarea>
+    </sdpi-item>
+
+    <sdpi-item label="Short-press HTML (optional)">
+        <sdpi-textarea
+            setting="shortHtml"
+            placeholder="Optional HTML, e.g. colored text"
             rows="4">
         </sdpi-textarea>
     </sdpi-item>
 
-    <sdpi-item label="Long-press text">
+    <sdpi-item label="Long-press text (fallback)">
         <sdpi-textarea
             setting="longText"
-            placeholder="Text to paste when held"
+            placeholder="Plain text for a long hold"
+            rows="3">
+        </sdpi-textarea>
+    </sdpi-item>
+
+    <sdpi-item label="Long-press HTML (optional)">
+        <sdpi-textarea
+            setting="longHtml"
+            placeholder="Optional HTML, e.g. colored text"
             rows="4">
         </sdpi-textarea>
     </sdpi-item>
@@ -35,7 +51,7 @@
     </sdpi-item>
 
     <sdpi-item label="Behavior">
-        <div>Release the key to paste. Holding for at least the threshold selects the long-press text.</div>
+        <div>HTML fields are optional. When provided, HTML formatting is copied along with the plain-text fallback. Release the key to paste.</div>
     </sdpi-item>
 </body>
 </html>
