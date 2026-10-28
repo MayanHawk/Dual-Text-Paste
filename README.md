@@ -41,13 +41,9 @@ Each key stores its own settings, so different keys can paste different messages
 This example makes the first line green and bold:
 
 ```html
-<div>
   <span style="color:#4caf50"><b>GREEN TEXT</b></span>
-  <br>
   <b>ckecks okay.</b>
-  <br>
   <b>what's being run</b>
-</div>
 ```
 
 Enter the corresponding plain-text version in the fallback field as well. Applications that accept HTML clipboard data can preserve rich formatting; applications that only accept plain text can use the fallback.
