@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Dual Text Paste Settings</title>
+    <script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script>
+</head>
+<body>
+    <sdpi-item label="Short-press text">
+        <sdpi-textarea
+            setting="shortText"
+            placeholder="Text to paste on a quick tap"
+            rows="4">
+        </sdpi-textarea>
+    </sdpi-item>
+
+    <sdpi-item label="Long-press text">
+        <sdpi-textarea
+            setting="longText"
+            placeholder="Text to paste when held"
+            rows="4">
+        </sdpi-textarea>
+    </sdpi-item>
+
+    <sdpi-item label="Long-press threshold (ms)">
+        <sdpi-range
+            setting="longPressMs"
+            min="300"
+            max="1500"
+            step="100"
+            default="600"
+            showlabels>
+        </sdpi-range>
+    </sdpi-item>
+
+    <sdpi-item label="Behavior">
+        <div>Release the key to paste. Holding for at least the threshold selects the long-press text.</div>
+    </sdpi-item>
+</body>
+</html>

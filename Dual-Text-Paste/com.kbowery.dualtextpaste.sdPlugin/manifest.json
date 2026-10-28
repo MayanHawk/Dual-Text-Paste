@@ -1,0 +1,47 @@
+{
+	"Name": "Dual Text Paste",
+	"Version": "0.1.0.0",
+	"Author": "kBowery",
+	"Actions": [
+		{
+			"Name": "Dual Text Paste",
+			"UUID": "com.kbowery.dualtextpaste.paste",
+			"Icon": "imgs/actions/counter/icon",
+			"Tooltip": "Pastes different text on short and long presses.",
+			"PropertyInspectorPath": "ui/increment-counter.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/counter/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "Dual Text Paste",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Pastes different configurable text on short and long presses",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "7.1"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "24",
+		"Debug": "enabled"
+	},
+	"UUID": "com.kbowery.dualtextpaste"
+}
