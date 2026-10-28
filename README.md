@@ -42,11 +42,11 @@ This example makes the first line green and bold:
 
 ```html
 <div>
-  <span style="color:#4caf50"><b>PATROL FLYING</b></span>
+  <span style="color:#4caf50"><b>GREEN TEXT</b></span>
   <br>
-  <b>Preflight check OK.</b>
+  <b>ckecks okay.</b>
   <br>
-  <b>Site Code - Mission Name</b>
+  <b>what's being run</b>
 </div>
 ```
 
